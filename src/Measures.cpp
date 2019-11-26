@@ -18,10 +18,11 @@ void Measures::MutualInformation(Graph* g, list<Node> TS, double &FF) {
 
 	FF = 0;
 	list<Node> aux1 = TS;
+	list<Node> aux2;
 	int size1 = TS.size();
 	int size2 = 0;
 	for (int i = 0; i < size1; i++) {
-		list<Node> aux2 = aux1;
+		aux2 = aux1;
 		size2 = aux2.size();
 		for (int j = 0; j < size2; j++) {
 			FF += MutualInformation(g->getIOmap(), aux1.front(), aux2.front());

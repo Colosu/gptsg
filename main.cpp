@@ -262,9 +262,9 @@ void compare(int len, bool max1, string ff1, bool max2, string ff2) {
 				}
 				if (count[0] != count[1]) {
 					valid++;
+					killed1 += (double)count[0]/MUT;
+					killed2 += (double)count[1]/MUT;
 				}
-				killed1 += (double)count[0]/MUT;
-				killed2 += (double)count[1]/MUT;
 
 			} catch (const runtime_error &e) {
 				throw e;

@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lzlibcomplete -lpthread -ldl -lfst
+LIBS := -ldl -lfst
 
